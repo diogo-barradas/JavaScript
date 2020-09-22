@@ -12,22 +12,33 @@
     <div id="cat"></div>
     <footer id="rodape"></footer>
 
+    <script type="text/javascript" src="rotinas.js"></script>
     <script>
+        //gerar um nr inteiro aleatorio entre 2 numeros
+        function randomIntFromInterval(min, max) { // min e max incluido
+        min = Math.ceil(min); // arredondar para baixo 
+        max = Math.floor(max); // arrendondar para cima
+        return Math.floor(Math.random()*(max - min)) + min;
+        }
 
-        alert("Olá mundo!");
+        var data = new Date(); //data e hora atual do computador
+        var dataLocal = data.toLocaleString(); // apresentar a data e hora local 
 
-        //date e hora atual do computador 
-        var data = new Date();
-        document.getElementById("rodape").innerHTML = `<h3>${data}</h3>`;
-
-        //apresentar a data e hora no formtato local do utilizador
-        var dataLocal = data.toLocaleString();
         document.getElementById("rodape").innerHTML = `<h3>${dataLocal}</h3>`;
-
-
         document.getElementById("titulo").innerText += '! Agora no browser!';
-        document.getElementById("cat").innerHTML = '<img src="https://loremflickr.com/320/240/cat" />';
-    </script>
+
+        //adicionar 5 elemntos de imagem 
+        for(var i=0;i<=5;++i)
+        {
+            var randomWidth = randomIntFromInterval(200, 600);
+            var randomHeight = randomIntFromInterval(200, 600);
+
+            var novaimg = document.createElement("img");
+            novaimg.src = `https://loremflickr.com/${randomWidth}/${randomHeight}/cat`;
+            document.getElementById("cat").appendChild(novaimg);
+        }
+
+    </script>    
 </body>
 
 </html>
