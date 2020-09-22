@@ -4,4 +4,3 @@
         var b = randomIntFromInterval(0,255);
         var backColor = "rgb(" + r + "," + g + "," + b + ")";
 
-        document.bgColor = backColor;
