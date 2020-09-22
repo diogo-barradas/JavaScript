@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="pt" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 01</title>
+</head>
+
+<body>
+    <h1 id="titulo">JavaScript - Primeiros Passos</h1>
+    <div id="cat"></div>
+    <footer id="rodape"></footer>
+
+    <script>
+
+        alert("Olá mundo!");
+
+        //date e hora atual do computador 
+        var data = new Date();
+        document.getElementById("rodape").innerHTML = `<h3>${data}</h3>`;
+
+        //apresentar a data e hora no formtato local do utilizador
+        var dataLocal = data.toLocaleString();
+        document.getElementById("rodape").innerHTML = `<h3>${dataLocal}</h3>`;
+
+
+        document.getElementById("titulo").innerText += '! Agora no browser!';
+        document.getElementById("cat").innerHTML = '<img src="https://loremflickr.com/320/240/cat" />';
+    </script>
+</body>
+
+</html>
