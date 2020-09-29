@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="pt" dir="UTF-8">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 02</title>
+</head>
+
+<body>
+    <h1 id="titulo">JavaScript - Eventos</h1>
+    <input id="texto" type="text" />
+    <br>
+    <input id="botao" type="button" value="Clica-me!" />
+
+    <div id="texto-inserido">
+        <input id="remove" type="button" value="Remove Evento" />
+    </div>
+
+<script>
+    function btnClicaMe()
+    {
+        //ler o valor da caixa de texto
+        var txt = document.getElementById("texto").value;
+
+        //adicionar o texto da caixa ao conteudo 
+        document.getElementById("texto-inserido").innerHTML += `<p>${txt}</p>`;   
+    }
+
+    function btnRemoveEvento()
+    {
+        console.log("Oh! Agora ja não vamos conseguir adcionar mais texto!");
+        document.getElementById("botao").removeEventListener("click", btnClicaMe);
+    }
+
+    document.getElementById("botao").addEventListener("click", btnClicaMe);
+    document.getElementById("remove").addEventListener("click", btnRemoveEvento);
+</script>
+
+</body>
+
+</html>
