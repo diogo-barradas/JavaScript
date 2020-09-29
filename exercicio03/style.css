@@ -1,0 +1,115 @@
+body 
+{
+    font-family: Roboto;
+    background: #8E0E00;
+
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #8E0E00, #1F1C18);
+    /* Chorme 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #8E0E00, #1F1C18);
+    /*W3C, IE 10+/ Edge, Firefox 16+, Chorme 26+, Opera 12+, Safari 7+ */
+}
+
+#container
+{
+    height: 600px;
+    width: 450px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    text-align: left;
+}
+
+h1
+{
+    background: #1F030C;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+label
+{
+    padding-top: 20px;
+    padding-left: 50px;
+    display: table-cell;
+}
+
+input
+{
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+form input[type="text"]
+{
+    width: 340px;
+}
+
+#serviceQual 
+{
+    padding: 13px 13px 20px 20px;
+    margin-left: 50px;
+    font-size: 25px;
+    width: 340px;
+}
+
+button
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: #AD133A;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    font-style: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover
+{
+    background: #4c2827;
+    border-bottom-color: #111;
+}
+
+button:active
+{
+    position: relative;
+    top: 1px;
+}
+
+#totalTip, #totalEach
+{
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#totalTip:before
+{
+    content: "Total de gorjeta";
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+#totalEach:before
+{
+    content: "A pagar";
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Divisao Conta!</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Calcular gorjeta & Dividir conta</h1>
+        <div id="calculator">
+            <form>
+                <label for="billamt">Total da conta</label>
+                <input id="billamt" type="text" placeholder="Total"> €
+                <label for="serviceQual">Qualidade de serviço</label>
+                <select id="serviceQual">
+                    <option disabled selected value="0">-- Escolhe uma opção --</option>
+                    <option value="0.3">Excelente (30%)</option>
+                    <option value="0.2">Bom (20%)</option>
+                    <option value="0.15">Aceitavel (15%)</option>
+                    <option value="0.1">Mau (10%)</option>
+                    <option value="0.05">Muito Mau (5%)</option>
+                </select>
+            <label for="peopleamt">Quantas pessoas dividem a conta</label>
+            <input id="peopleamt" type="text" placeholder="Numero Pessoas">
+            <button type="button" id="calculate">Calcular!</button>
+            </form>
+        </div>
+        <div id="totalTip">
+            <span id="tip">0.00</span> €
+        </div>
+        <div id="totalEach">
+            <span id="value">0.00</span> €<span id="each"> a cada</span>
+        </div>
+    </div>
+    <script src="app.js" charset="utf-8"></script>
+
+</body>
+</html>
