@@ -1,0 +1,11 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 400px;
+    height: 300px;
+}
+
+.grid > img {
+    margin: 2px;
+}
