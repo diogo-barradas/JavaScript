@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+
+<body>
+    <h1>IMC</h1>
+    <div class="esquerda">
+        <label for="dataregisto">Data</label>
+        <input type="datetime-local" id="dataregisto"/>
+        <label for="peso">Peso (em Kg)</label>
+        <input type="number" id="preso" value=""/>
+        <label for="altura">Altura (em cm)</label>
+        <input type="number" id="altura" value=""/>
+        <br>
+        <a href="#" class="myButton" id="btnRegistar">Registar</a>
+    </div>
+
+    <div class="esquerda">
+        <table>
+            <thead>
+                <tr>
+                 <td>Data</td>
+                 <td>Altura</td>
+                 <td>Peso</td>
+                 <td>IMC</td>
+                 <td>Classificaçao</td>
+                 <td></td>
+                </tr>
+            </thead>
+            <tbody id="tabDados">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="log"><h2>DELETE LOG</h2></div>
+    <script src="https://kit.fontawesome.com/58354de0eb.js" crossorigin="anonymous"></script>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
